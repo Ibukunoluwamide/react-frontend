@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar'
 import SignIn from './components/SignIn'
 import SignUp from './components/Signup'
+import FileUpload from './page/FileUpload';
 import Home from './page/Home'
 import SignPage from './signpage/SignPage';
 
@@ -20,6 +21,7 @@ function App() {
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/signin' element={<SignIn/>}/>
+      <Route path='/upload' element={<FileUpload/>}/>
       <Route path='/dashboard' element={token?<Dashboard/>:<Navigate to="/signin"/>}/>
       <Route path='/signpage' element={<SignPage/>}/>
     </Routes>

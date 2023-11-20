@@ -20,7 +20,7 @@ const Signup = () => {
     // setUsers([...users, newUser]);
     // console.log(users);
     
-    axios.post('https://node-backend-az50.onrender.com/user/signup',newUser)
+    axios.post('http://localhost:3000/user/signup',newUser)
     .then((result) => {
       console.log(result);
       if (result.data.status==true) {

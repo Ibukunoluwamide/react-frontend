@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Dashboard = () => {
   const navigate = useNavigate()
   useEffect(() => {
-    axios.get('hhttps://node-backend-az50.onrender.com/user/dashboard', {
+    axios.get('https://node-backend-az50.onrender.com/user/dashboard', {
       headers: {
               Authorization: `Bearer ${localStorage.token}`,
               'Accept': 'application/json',

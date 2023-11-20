@@ -46,6 +46,11 @@ const Navbar = () => {
                   Dashboard
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/upload"}>
+                  File Upload
+                </Link>
+              </li>
               {/* <li className="nav-item">
                 <Link className="nav-link" to={"/signpage"}>
                   Sign Page

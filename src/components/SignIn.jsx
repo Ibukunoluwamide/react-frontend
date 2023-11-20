@@ -12,7 +12,7 @@ const SignIn = () => {
         email: email,
         password: password,
       };
-      axios.post('https://node-backend-az50.onrender.com/user/signin',newUser)
+      axios.post('http://localhost:3000/user/signin',newUser)
       .then((result) => {
         console.log(result);
         if (result.data.status==true) {
